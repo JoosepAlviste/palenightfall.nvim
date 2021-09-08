@@ -1,5 +1,7 @@
 # 🌑 Palenightfall
 
+## ![](https://user-images.githubusercontent.com/9450943/132527766-00b27fd6-ca9d-4c5d-9be8-645e657e39cc.png)
+
 A Neovim theme inspired by material palenight. I've used the [material 
 palenight](https://github.com/kaicataldo/material.vim) theme for a long time and
 have made many adjustments to it in my config. I thought that it would make 
