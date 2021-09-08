@@ -132,6 +132,10 @@ function M.configure_highlights(overrides)
     TSFuncBuiltin     = { fg = c.blue },
 
     -- Markdown
+    markdownCode          = { fg = c.foreground_darker },
+    markdownCodeDelimiter = { fg = c.foreground_darker },
+
+    -- plasticboy/vim-markdown
     mkdHeading       = { fg = c.green },
     mkdListItem      = { fg = c.cyan },
     mkdCode          = { fg = c.foreground_darker },
