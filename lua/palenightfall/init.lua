@@ -61,6 +61,7 @@ function M.configure_highlights(overrides)
     PMenuThumb   = { bg = c.background },
     PMenuSel     = { fg = c.cyan, bg = c.background },
     NormalFloat  = { bg = c.background },
+    FloatBorder  = { fg = c.selection },
     Question     = { fg = c.green },
     MoreMsg      = { fg = c.green },
     ErrorMsg     = { fg = c.red },
