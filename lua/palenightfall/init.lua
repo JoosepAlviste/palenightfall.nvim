@@ -106,19 +106,17 @@ function M.configure_highlights(overrides)
     gitcommitDiscardedType = { fg = c.red },
 
     -- LSP
-    LspDiagnosticsDefaultError       = { fg = c.red },
-    LspDiagnosticsUnderlineError     = { fg = 'NONE', style = 'undercurl', sp = c.red },
-    LspDiagnosticsDefaultWarning     = { fg = c.orange },
-    LspDiagnosticsUnderlineWarning   = { fg = 'NONE', style = 'undercurl', sp = c.orange },
-    LspDiagnosticsDefaultInformation = { fg = c.blue },
-    LspDiagnosticsUnderlineInformation = { fg = 'NONE', style = 'undercurl', sp = c.blue },
-    LspDiagnosticsDefaultHint        = { fg = c.darker_fg },
-    LspDiagnosticsUnderlineHint      = { fg = c.comments, style = 'undercurl', sp = c.comments },
+    DiagnosticError                  = { fg = c.red },
+    DiagnosticUnderlineError         = { fg = 'NONE', style = 'undercurl', sp = c.red },
+    DiagnosticWarn                   = { fg = c.orange },
+    DiagnosticUnderlineWarn          = { fg = 'NONE', style = 'undercurl', sp = c.orange },
+    DiagnosticInformation            = { fg = c.blue },
+    DiagnosticUnderlineInformation   = { fg = 'NONE', style = 'undercurl', sp = c.blue },
+    DiagnosticHint                   = { fg = c.darker_fg },
+    DiagnosticUnderlineHint          = { fg = c.comments, style = 'undercurl', sp = c.comments },
     LspReferenceText                 = { bg = c.line_numbers },
     LspReferenceRead                 = { bg = c.line_numbers },
     LspReferenceWrite                = { bg = c.line_numbers },
-    LspDiagnosticsLineNrError        = { fg = c.red, bg = '#312a34', style = 'bold' },
-    LspDiagnosticsLineNrWarning      = { fg = c.orange, bg = '#312e3a', style = 'bold' },
     LspDiagnosticsVirtualTextError   = { fg = '#9e4057' },
     LspDiagnosticsVirtualTextWarning = { fg = '#9a6054' },
 
@@ -135,6 +133,9 @@ function M.configure_highlights(overrides)
     -- Markdown
     markdownCode          = { fg = c.foreground_darker },
     markdownCodeDelimiter = { fg = c.foreground_darker },
+
+    -- Vimscript
+    vimOption = { fg = c.yellow },
 
     -- plasticboy/vim-markdown
     mkdHeading       = { fg = c.green },
