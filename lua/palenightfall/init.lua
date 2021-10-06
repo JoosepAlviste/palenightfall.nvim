@@ -42,6 +42,7 @@ function M.configure_highlights(overrides)
     CursorLine   = { bg = c.background_darker },
     CursorLineNr = { fg = c.foreground_darker },
     CursorColumn = { bg = c.background_darker },
+    TermCursor   = { fg = c.background, bg = c.blue },
     ColorColumn  = { bg = c.background_darker },
     Search       = { bg = c.highlight },
     IncSearch    = { bg = c.highlight },
@@ -64,9 +65,12 @@ function M.configure_highlights(overrides)
     FloatBorder  = { fg = c.selection },
     Question     = { fg = c.green },
     MoreMsg      = { fg = c.green },
+    Error        = { fg = c.red },
     ErrorMsg     = { fg = c.red },
+    NvimInternalError = { fg = c.red },
     WarningMsg   = { fg = c.orange },
     Directory    = { fg = c.blue },
+    Conceal      = { fg = c.brown },
 
     -- Syntax
     Normal      = { fg = c.foreground },
@@ -89,6 +93,11 @@ function M.configure_highlights(overrides)
     Title       = { fg = c.yellow },
     Type        = { fg = c.yellow },
     SpellBad    = { style = 'undercurl', sp = c.orange },
+    SpellCap    = { style = 'undercurl', sp = c.blue },
+    SpellRare   = { style = 'undercurl', sp = c.violet },
+    SpellLocal  = { style = 'undercurl', sp = c.cyan },
+    Noise       = { fg = c.cyan },
+    SpecialKey  = { fg = c.line_numbers },
 
     -- Git
     DiffAdd                = { bg = '#1e3d27' },
@@ -110,8 +119,8 @@ function M.configure_highlights(overrides)
     DiagnosticUnderlineError         = { fg = 'NONE', style = 'undercurl', sp = c.red },
     DiagnosticWarn                   = { fg = c.orange },
     DiagnosticUnderlineWarn          = { fg = 'NONE', style = 'undercurl', sp = c.orange },
-    DiagnosticInformation            = { fg = c.blue },
-    DiagnosticUnderlineInformation   = { fg = 'NONE', style = 'undercurl', sp = c.blue },
+    DiagnosticInfo                   = { fg = c.blue },
+    DiagnosticUnderlineInfo          = { fg = 'NONE', style = 'undercurl', sp = c.blue },
     DiagnosticHint                   = { fg = c.darker_fg },
     DiagnosticUnderlineHint          = { fg = c.comments, style = 'undercurl', sp = c.comments },
     LspReferenceText                 = { bg = c.line_numbers },
