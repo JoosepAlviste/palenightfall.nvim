@@ -121,7 +121,7 @@ function M.configure_highlights(overrides)
     DiagnosticUnderlineWarn          = { fg = 'NONE', style = 'undercurl', sp = c.orange },
     DiagnosticInfo                   = { fg = c.blue },
     DiagnosticUnderlineInfo          = { fg = 'NONE', style = 'undercurl', sp = c.blue },
-    DiagnosticHint                   = { fg = c.darker_fg },
+    DiagnosticHint                   = { fg = c.foreground_darker },
     DiagnosticUnderlineHint          = { fg = c.comments, style = 'undercurl', sp = c.comments },
     LspReferenceText                 = { bg = c.line_numbers },
     LspReferenceRead                 = { bg = c.line_numbers },
@@ -162,7 +162,9 @@ function M.configure_highlights(overrides)
     diffRemoved = { fg = c.red },
 
     -- hrsh7th/nvim-cmp
-    CmpDocumentation = { bg = c.background_darker },
+    CmpDocumentation   = { bg = c.background_darker },
+    CmpItemAbbrDefault = { fg = c.foreground },
+    CmpItemKindDefault = { fg = c.purple },
 
     -- nvim-telescope/telescope.nvim
     TelescopeMatching       = { fg = c.blue },
