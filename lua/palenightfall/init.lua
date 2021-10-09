@@ -164,7 +164,7 @@ function M.configure_highlights(overrides)
     -- hrsh7th/nvim-cmp
     CmpDocumentation   = { bg = c.background_darker },
     CmpItemAbbrDefault = { fg = c.foreground },
-    CmpItemKindDefault = { fg = c.purple },
+    CmpItemKindDefault = { fg = c.foreground_darker },
 
     -- nvim-telescope/telescope.nvim
     TelescopeMatching       = { fg = c.blue },
