@@ -25,6 +25,12 @@ M.colors = {
   brown = '#c17e70',
   pink = '#f07178',
   violet = '#bb80b3',
+
+  -- Mix 10 parts color, 6 parts bg color
+  red_dark = '#9e4057',
+  orange_dark = '#9a6054',
+  blue_dark = '#5970a6',
+  green_dark = '#7d9367',
 }
 
 function M.configure_colors(overrides)
@@ -172,6 +178,21 @@ function M.configure_highlights(overrides)
     TelescopePromptPrefix   = { fg = c.blue },
     TelescopeSelectionCaret = { fg = c.blue, bg = c.highlight },
     TelescopeSelection      = { bg = c.highlight },
+
+    -- rcarriga/nvim-notify
+    NotifyERRORBorder = { fg = c.red_dark },
+    NotifyERRORIcon = { fg = c.red },
+    NotifyERRORTitle = { fg = c.red },
+    NotifyWARNBorder = { fg = c.orange_dark },
+    NotifyWARNIcon = { fg = c.orange },
+    NotifyWARNTitle = { fg = c.orange },
+    NotifyINFOBorder = { fg = c.green_dark },
+    NotifyINFOIcon = { fg = c.green },
+    NotifyINFOTitle = { fg = c.green },
+    NotifyDEBUGBorder = { fg = c.foreground_darker },
+    NotifyDEBUGIcon = { fg = c.foreground_darker },
+    NotifyDEBUGTitle = { fg = c.foreground_darker },
+    NotifyLogTitle = { fg = c.yellow },
   }
 
   M.highlights = vim.tbl_deep_extend('force', default_highlights, overrides or {})
