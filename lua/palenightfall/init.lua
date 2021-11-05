@@ -48,6 +48,7 @@ function M.configure_highlights(overrides)
     CursorLine   = { bg = c.background_darker },
     CursorLineNr = { fg = c.foreground_darker },
     CursorColumn = { bg = c.background_darker },
+    Cursor       = { fg = c.background, bg = c.blue },
     TermCursor   = { fg = c.background, bg = c.blue },
     ColorColumn  = { bg = c.background_darker },
     Search       = { bg = c.highlight },
