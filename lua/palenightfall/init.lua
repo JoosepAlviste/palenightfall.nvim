@@ -179,6 +179,10 @@ function M.configure_highlights(overrides)
     TelescopeSelectionCaret = { fg = c.blue, bg = c.highlight },
     TelescopeSelection      = { bg = c.highlight },
 
+    -- kyazdani42/nvim-tree.lua
+    NvimTreeRootFolder = { fg = c.green },
+    NvimTreeGitDirty   = { fg = c.green },
+
     -- rcarriga/nvim-notify
     NotifyERRORBorder = { fg = c.red_dark },
     NotifyERRORIcon = { fg = c.red },
