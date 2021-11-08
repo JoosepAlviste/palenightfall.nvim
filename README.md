@@ -86,3 +86,16 @@ require('palenightfall').setup({
   },
 })
 ```
+
+
+## More screenshots
+
+![](https://user-images.githubusercontent.com/9450943/140811276-b794f2d5-4a43-49ea-887b-6b84db9483db.png)
+
+![](https://user-images.githubusercontent.com/9450943/140811459-5a021aff-9cf6-46b1-8ef1-d88a5e972d10.png)
+
+![](https://user-images.githubusercontent.com/9450943/140811822-8e71bfc4-8fea-4f22-b777-a3e85aebf3aa.png)
+
+![](https://user-images.githubusercontent.com/9450943/140811912-748e3f9e-222a-4367-ba4e-8a2a0797844a.png)
+
+![](https://user-images.githubusercontent.com/9450943/140812274-c8d6f376-9819-4d14-b893-0197ba6616f8.png)
