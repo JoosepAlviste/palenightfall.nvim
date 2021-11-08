@@ -2,6 +2,11 @@ local highlight = require('palenightfall.internal').highlight
 
 local M = {}
 
+---@alias PalenightfallHighlightConfig table<string, PalenightfallHighlight>
+
+---Color definitions.
+---
+---@type table<string, string>
 M.colors = {
   background = '#252837',
   foreground = '#a6accd',
@@ -33,15 +38,29 @@ M.colors = {
   green_dark = '#7d9367',
 }
 
+---Configure the colors used for highlights.
+---
+---@param overrides table<string, string> Color overrides following the same
+---format as `colors`
 function M.configure_colors(overrides)
   M.colors = vim.tbl_deep_extend('force', M.colors, overrides or {})
 end
 
+---Table of all highlights that this plugin sets up.
+---
+---Can be customized with `configure_highlights`.
+---
+---@type PalenightfallHighlightConfig
 M.highlights = nil
 
+---Configure highlights and override the given ones
+---
+---@param overrides PalenightfallHighlightConfig Will be merged reqursively 
+---with the defaults
 function M.configure_highlights(overrides)
   local c = M.colors
 
+  ---@type PalenightfallHighlightConfig
   local default_highlights = {
     -- UI elements
     LineNr       = { fg = c.line_numbers },
@@ -203,6 +222,13 @@ function M.configure_highlights(overrides)
   M.highlights = vim.tbl_deep_extend('force', default_highlights, overrides or {})
 end
 
+---@class PalenightfallOpts
+---@field color_overrides table<string, string>
+---@field highlight_overrides PalenightfallHighlightConfig
+
+---Configure and enable the colorscheme.
+--
+---@param opts PalenightfallOpts
 function M.setup(opts)
   opts = opts or {}
 
