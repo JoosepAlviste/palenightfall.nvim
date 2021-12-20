@@ -164,6 +164,8 @@ function M.configure_highlights(overrides)
     TSKeywordOperator = { fg = c.purple },
     TSConstBuiltin    = { fg = c.orange },
     TSFuncBuiltin     = { fg = c.blue },
+    TSLiteral         = { fg = c.foreground_darker },
+    TSNote            = { fg = c.cyan },
 
     -- Markdown
     markdownCode          = { fg = c.foreground_darker },
