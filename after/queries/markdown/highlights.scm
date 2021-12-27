@@ -20,6 +20,8 @@
     "["
     "]"
     "!"
+    "("
+    ")"
   ] @punctuation.bracket)
 
 [
