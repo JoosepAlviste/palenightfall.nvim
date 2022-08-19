@@ -13,6 +13,7 @@ M.colors = {
 
   background_darker = '#232534',
   highlight = '#2b2f40',
+  references = '#2e2e41',  -- Mix 19 background / 1 purple
   selection = '#343A51',
   statusline = '#1d1f2b',
   foreground_darker = '#7982b4',
@@ -31,7 +32,7 @@ M.colors = {
   pink = '#f07178',
   violet = '#bb80b3',
 
-  -- Mix 10 parts color, 6 parts bg color
+  -- Mix 6 background / 10 color
   red_dark = '#9e4057',
   orange_dark = '#9a6054',
   blue_dark = '#5970a6',
@@ -73,7 +74,7 @@ function M.configure_highlights(overrides)
     Search       = { bg = c.highlight },
     IncSearch    = { bg = c.highlight },
     Visual       = { bg = c.selection },
-    MatchParen   = { bg = c.line_numbers },
+    MatchParen   = { bg = c.references },
     SignColumn   = { bg = 'NONE' },
     FoldColumn   = { fg = c.line_numbers, bg = 'NONE' },
     Folded       = { fg = c.comments, bg = c.background_darker },
@@ -149,9 +150,9 @@ function M.configure_highlights(overrides)
     DiagnosticUnderlineInfo          = { fg = 'NONE', style = 'undercurl', sp = c.blue },
     DiagnosticHint                   = { fg = c.foreground_darker },
     DiagnosticUnderlineHint          = { fg = c.comments, style = 'undercurl', sp = c.comments },
-    LspReferenceText                 = { bg = c.line_numbers },
-    LspReferenceRead                 = { bg = c.line_numbers },
-    LspReferenceWrite                = { bg = c.line_numbers },
+    LspReferenceText                 = { bg = c.references },
+    LspReferenceRead                 = { bg = c.references },
+    LspReferenceWrite                = { bg = c.references },
     LspDiagnosticsVirtualTextError   = { fg = '#9e4057' },
     LspDiagnosticsVirtualTextWarning = { fg = '#9a6054' },
 
