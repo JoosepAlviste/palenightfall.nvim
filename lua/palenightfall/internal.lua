@@ -14,27 +14,31 @@ local M = {}
 ---@field italic boolean
 ---@field reverse boolean
 ---@field nocombine boolean
----@field style string
+---
+---@field style string DEPRECATED, use the boolean fields instead
 
 ---@param group string
 ---@param colors PalenightfallHighlight
 function M.highlight(group, colors)
-  local style = {
-    bold = colors.style == 'bold',
-    standout = colors.style == 'standout',
-    underline = colors.style == 'underline',
-    undercurl = colors.style == 'undercurl',
-    underdouble = colors.style == 'underdouble',
-    underdotted = colors.style == 'underdotted',
-    underdashed = colors.style == 'underdashed',
-    strikethrough = colors.style == 'strikethrough',
-    italic = colors.style == 'italic',
-    reverse = colors.style == 'reverse',
-    nocombine = colors.style == 'nocombine',
-  }
+  local style = {}
 
   if colors.style ~= nil then
+    vim.api.nvim_echo({{'[palenightfall.nvim] "style" field is deprecated. Use boolean fields instead'}}, true, {})
+
     colors.style = nil
+    style = {
+      bold = colors.style == 'bold',
+      standout = colors.style == 'standout',
+      underline = colors.style == 'underline',
+      undercurl = colors.style == 'undercurl',
+      underdouble = colors.style == 'underdouble',
+      underdotted = colors.style == 'underdotted',
+      underdashed = colors.style == 'underdashed',
+      strikethrough = colors.style == 'strikethrough',
+      italic = colors.style == 'italic',
+      reverse = colors.style == 'reverse',
+      nocombine = colors.style == 'nocombine',
+    }
   end
 
   vim.api.nvim_set_hl(
