@@ -119,6 +119,7 @@ function M.configure_highlights(overrides)
     Todo        = { fg = c.orange },
     Title       = { fg = c.yellow },
     Type        = { fg = c.yellow },
+    Tag         = { fg = c.yellow },
     SpellBad    = { undercurl = true, sp = c.orange },
     SpellCap    = { undercurl = true, sp = c.blue },
     SpellRare   = { undercurl = true, sp = c.violet },
@@ -157,6 +158,22 @@ function M.configure_highlights(overrides)
     LspDiagnosticsVirtualTextWarning = { fg = '#9a6054' },
 
     -- Treesitter
+    ['@constructor']      = { link = 'Type' },
+    ['@tag']              = { link = 'Tag' },
+    ['@tag.delimiter']    = { fg = c.foreground_darker },
+    ['@variable.builtin'] = { link = 'Constant' },
+    ['@variable']         = { link = 'Normal' },
+    ['@function.builtin'] = { link = 'Function' },
+    ['@constant.builtin'] = { link = 'Constant' },
+    ['@text.literal']     = { fg = c.foreground_darker },
+    ['@text.title']       = { link = 'Title' },
+    ['@text.uri']         = { fg = c.blue, underline = true },
+    ['@text.reference']   = { fg = c.green },
+    ['@text.strong']      = { bold = true },
+    ['@text.emphasis']    = { italic = true },
+
+    -- DEPRECATED: nvim-treesitter has removed these highlight groups
+    -- https://github.com/nvim-treesitter/nvim-treesitter/issues/2293#issuecomment-1279974776
     TSConstructor     = { fg = c.yellow },
     TSTag             = { fg = c.yellow },
     TSTagDelimiter    = { fg = c.foreground_darker },

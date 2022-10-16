@@ -14,6 +14,7 @@ local M = {}
 ---@field italic boolean
 ---@field reverse boolean
 ---@field nocombine boolean
+---@field link string|nil
 ---
 ---@field style string DEPRECATED, use the boolean fields instead
 
