@@ -37,6 +37,16 @@ M.colors = {
   orange_dark = '#9a6054',
   blue_dark = '#5970a6',
   green_dark = '#7d9367',
+
+  -- Diff change
+  -- Mix 7 background / 1 #00BE6A
+  diff_add_background = '#203b3d',
+  -- Mix 2 background / 1 #00BE6A
+  diff_add_highlight = '#1c4e44',
+  -- Mix 5 background / 1 red
+  diff_delete_background = '#492f41',
+  -- Mix 2 background / 1 red
+  diff_delete_hightlight = '#6e364a',
 }
 
 ---Configure the colors used for highlights.
@@ -128,10 +138,10 @@ function M.configure_highlights(overrides)
     SpecialKey  = { fg = c.line_numbers },
 
     -- Git
-    DiffAdd                = { bg = '#1e3d27' },
-    DiffDelete             = { bg = '#59222c' },
-    DiffChange             = { bg = '#0a2e72' },
-    DiffText               = { bg = '#0e43a5' },
+    DiffAdd                = { bg = c.diff_add_background },
+    DiffDelete             = { bg = c.background, fg = c.line_numbers },
+    DiffChange             = { bg = c.diff_add_background },
+    DiffText               = { bg = c.diff_add_highlight },
     gitcommitHeader        = { fg = c.purple },
     gitcommitOverflow      = { fg = c.red },
     gitcommitUnmerged      = { fg = c.green },
@@ -200,9 +210,12 @@ function M.configure_highlights(overrides)
     mkdCodeDelimiter = { fg = c.foreground_darker },
 
     -- lewis6991/gitsigns.nvim
-    GitSignsAdd    = { fg = c.green },
-    GitSignsChange = { fg = c.orange },
-    GitSignsDelete = { fg = c.red },
+    GitSignsAdd           = { fg = c.green },
+    GitSignsChange        = { fg = c.orange },
+    GitSignsDelete        = { fg = c.red },
+    GitSignsDeletePreview = { fg = c.foreground, bg = c.diff_delete_background },
+    GitSignsAddInline     = { bg = c.diff_add_highlight },
+    GitSignsDeleteInline  = { bg = c.diff_delete_hightlight },
 
     -- tpope/vim-fugitive
     diffAdded   = { fg = c.green },
