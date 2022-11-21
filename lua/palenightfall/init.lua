@@ -161,6 +161,7 @@ function M.configure_highlights(overrides)
     ['@constructor']      = { link = 'Type' },
     ['@tag']              = { link = 'Tag' },
     ['@tag.delimiter']    = { fg = c.foreground_darker },
+    ['@tag.attribute']    = { link = 'Normal' },
     ['@variable.builtin'] = { link = 'Constant' },
     ['@variable']         = { link = 'Normal' },
     ['@function.builtin'] = { link = 'Function' },
