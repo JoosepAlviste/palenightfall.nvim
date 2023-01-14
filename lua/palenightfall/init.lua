@@ -290,6 +290,9 @@ function M.configure_highlights(overrides)
     NotifyLogTitle = { fg = c.yellow },
     NotifyBackground = { bg = c.background },
 
+    -- folke/lazy.nvim
+    LazyNormal = { bg = c.background_darker },
+
     -- tamago324/lir.nvim
     LirDir = { fg = c.blue },
     LirEmptyDirText = { bg = c.highlight },
