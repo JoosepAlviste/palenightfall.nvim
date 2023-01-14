@@ -288,6 +288,7 @@ function M.configure_highlights(overrides)
     NotifyDEBUGIcon = { fg = c.foreground_darker },
     NotifyDEBUGTitle = { fg = c.foreground_darker },
     NotifyLogTitle = { fg = c.yellow },
+    NotifyBackground = { bg = c.background },
   }
 
   M.highlights = vim.tbl_deep_extend('force', default_highlights, overrides or {})
