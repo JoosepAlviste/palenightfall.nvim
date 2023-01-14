@@ -289,6 +289,11 @@ function M.configure_highlights(overrides)
     NotifyDEBUGTitle = { fg = c.foreground_darker },
     NotifyLogTitle = { fg = c.yellow },
     NotifyBackground = { bg = c.background },
+
+    -- tamago324/lir.nvim
+    LirDir = { fg = c.blue },
+    LirEmptyDirText = { bg = c.highlight },
+    CursorLineLir = { bg = c.highlight },
   }
 
   M.highlights = vim.tbl_deep_extend('force', default_highlights, overrides or {})
