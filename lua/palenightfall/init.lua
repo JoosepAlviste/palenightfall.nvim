@@ -297,6 +297,10 @@ function M.configure_highlights(overrides)
     LirDir = { fg = c.blue },
     LirEmptyDirText = { bg = c.highlight },
     CursorLineLir = { bg = c.highlight },
+
+    -- folke/noice.nvim
+    NoiceCmdlinePopup = { bg = c.background_darker },
+    NoiceMini = { bg = c.background_darker },
   }
 
   M.highlights = vim.tbl_deep_extend('force', default_highlights, overrides or {})
