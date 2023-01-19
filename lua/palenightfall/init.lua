@@ -301,6 +301,10 @@ function M.configure_highlights(overrides)
     -- folke/noice.nvim
     NoiceCmdlinePopup = { bg = c.background_darker },
     NoiceMini = { bg = c.background_darker },
+
+    -- L3MON4D3/LuaSnip
+    LuasnipChoice = { fg = c.orange },
+    LuasnipInsert = { fg = c.cyan },
   }
 
   M.highlights = vim.tbl_deep_extend('force', default_highlights, overrides or {})
