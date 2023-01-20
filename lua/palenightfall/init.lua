@@ -264,11 +264,15 @@ function M.configure_highlights(overrides)
     CmpItemKindText = { fg = c.green },
 
     -- nvim-telescope/telescope.nvim
+    TelescopeNormal         = { bg = c.background_darker },
+    TelescopeBorder         = { fg = c.background_darker, bg = c.background_darker },
     TelescopeMatching       = { fg = c.blue },
-    TelescopeBorder         = { fg = c.foreground_darker },
+    TelescopePromptNormal   = { bg = c.references },
+    TelescopePromptBorder   = { fg = c.references, bg = c.references },
+    TelescopePromptTitle    = { bg = c.references },
     TelescopePromptPrefix   = { fg = c.blue },
     TelescopeSelectionCaret = { fg = c.blue, bg = c.highlight },
-    TelescopeSelection      = { bg = c.highlight },
+    TelescopeSelection      = { bg = c.references },
 
     -- kyazdani42/nvim-tree.lua
     NvimTreeRootFolder = { fg = c.green },
