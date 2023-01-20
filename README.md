@@ -90,12 +90,20 @@ require('palenightfall').setup({
 
 ## More screenshots
 
-![](https://user-images.githubusercontent.com/9450943/140811276-b794f2d5-4a43-49ea-887b-6b84db9483db.png)
+![](https://user-images.githubusercontent.com/9450943/213535377-2f8a4659-d124-4831-8174-e103e20393ce.png)
 
-![](https://user-images.githubusercontent.com/9450943/140811459-5a021aff-9cf6-46b1-8ef1-d88a5e972d10.png)
+![](https://user-images.githubusercontent.com/9450943/213535691-2e14f221-8802-4c1a-8634-2d45b8ce6bca.png)
 
-![](https://user-images.githubusercontent.com/9450943/140811822-8e71bfc4-8fea-4f22-b777-a3e85aebf3aa.png)
+![](https://user-images.githubusercontent.com/9450943/213536594-85831ac3-80e4-413e-a9b5-ce6eb3d31b93.png)
 
-![](https://user-images.githubusercontent.com/9450943/140811912-748e3f9e-222a-4367-ba4e-8a2a0797844a.png)
+![](https://user-images.githubusercontent.com/9450943/213536758-d5c0f7ba-7006-42c4-80b8-5028de0f5b30.png)
 
-![](https://user-images.githubusercontent.com/9450943/140812274-c8d6f376-9819-4d14-b893-0197ba6616f8.png)
+![](https://user-images.githubusercontent.com/9450943/213537003-e25c8d5c-d7f2-4018-9fe2-59ff1611522a.png)
+
+![](https://user-images.githubusercontent.com/9450943/213640206-21b20169-4b92-438d-982b-e4efd57476bd.png)
+
+![](https://user-images.githubusercontent.com/9450943/213548641-caccc513-52d5-49c5-86e1-4df361a0cb49.png)
+
+![](https://user-images.githubusercontent.com/9450943/213640659-e65cc5cc-7ea1-43c4-9d84-ab0e38c378fa.png)
+
+![](https://user-images.githubusercontent.com/9450943/213641206-e26f2f59-2519-408a-882b-ff0675830dbe.png)
