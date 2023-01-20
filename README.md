@@ -43,6 +43,24 @@ require('palenightfall').setup()
 ```
 
 
+## 🌯 Supported plugins
+
+These are mainly just the plugins I use, but feel free to send a PR or 
+open an issue if there are any others you'd like to see support for.
+
+- [`hrsh7th/nvim-cmp`](https://github.com/hrsh7th/nvim-cmp)
+- [`nvim-telescope/telescope.nvim`](https://github.com/nvim-telescope/telescope.nvim)
+- [`lewis6991/gitsigns.nvim`](https://github.com/lewis6991/gitsigns.nvim)
+- [`folke/noice.nvim`](https://github.com/folke/noice.nvim)
+- [`folke/lazy.nvim`](https://github.com/folke/lazy.nvim)
+- [`tamago324/lir.nvim`](https://github.com/tamago324/lir.nvim)
+- [`L3MON4D3/LuaSnip`](https://github.com/L3MON4D3/LuaSnip)
+- [`rcarriga/nvim-notify`](https://github.com/rcarriga/nvim-notify)
+- [`kyazdani42/nvim-tree.lua`](https://github.com/nvim-tree/nvim-tree.lua)
+- [`preservevim/vim-markdown`](https://github.com/preservim/vim-markdown)
+- [`tpope/vim-fugitive`](https://github.com/tpope/vim-fugitive)
+
+
 ## ⚙️ Configuration
 
 Any colors and highlights can be overridden in Lua with the `setup` function:
@@ -88,7 +106,7 @@ require('palenightfall').setup({
 ```
 
 
-## More screenshots
+## 📸 More screenshots
 
 ![](https://user-images.githubusercontent.com/9450943/213535377-2f8a4659-d124-4831-8174-e103e20393ce.png)
 
