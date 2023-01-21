@@ -110,7 +110,7 @@ function M.configure_highlights(overrides)
     Conceal           = { fg = c.brown },
 
     -- Syntax
-    Normal      = { fg = c.foreground },
+    Normal      = { fg = c.foreground, bg = c.background },
     Identifier  = { fg = c.foreground },
     Comment     = { fg = c.comments, italic = true },
     NonText     = { fg = c.comments },
