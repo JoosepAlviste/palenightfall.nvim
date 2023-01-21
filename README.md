@@ -13,6 +13,8 @@ Here are some differences from the material themes:
 - **Easier on the eyes**: Much less red and brown
 - **Smaller and simpler codebase**: A single theme since I only used the 
   palenight variant
+- **Extensible**: Super easily configurable with new colors and highlights
+
 
 ## ⚡️ Requirements
 
@@ -104,6 +106,8 @@ require('palenightfall').setup({
   },
 })
 ```
+
+> See [`lua/palenightfall/init.lua`](lua/palenightfall/init.lua) for the default colors and highlights.
 
 
 ## 📸 More screenshots
