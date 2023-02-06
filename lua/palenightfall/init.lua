@@ -182,6 +182,7 @@ function M.configure_highlights(overrides)
     ['@text.reference']   = { fg = c.green },
     ['@text.strong']      = { bold = true },
     ['@text.emphasis']    = { italic = true },
+    ['@type.qualifier']   = { link = 'Keyword' },
 
     -- DEPRECATED: nvim-treesitter has removed these highlight groups
     -- https://github.com/nvim-treesitter/nvim-treesitter/issues/2293#issuecomment-1279974776
