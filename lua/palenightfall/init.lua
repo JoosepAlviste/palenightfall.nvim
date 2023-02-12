@@ -68,7 +68,8 @@ M.highlights = nil
 ---
 ---@param overrides PalenightfallHighlightConfig Will be merged reqursively 
 ---with the defaults
-function M.configure_highlights(overrides)
+---@param transparent ?boolean
+function M.configure_highlights(overrides, transparent)
   local c = M.colors
 
   ---@type PalenightfallHighlightConfig
@@ -110,7 +111,7 @@ function M.configure_highlights(overrides)
     Conceal           = { fg = c.brown },
 
     -- Syntax
-    Normal      = { fg = c.foreground, bg = c.background },
+    Normal      = { fg = c.foreground, bg = transparent and 'NONE' or c.background },
     Identifier  = { fg = c.foreground },
     Comment     = { fg = c.comments, italic = true },
     NonText     = { fg = c.comments },
@@ -318,6 +319,7 @@ end
 ---@class PalenightfallOpts
 ---@field color_overrides table<string, string>
 ---@field highlight_overrides PalenightfallHighlightConfig
+---@field transparent boolean
 
 ---Configure and enable the colorscheme.
 --
@@ -335,7 +337,7 @@ function M.setup(opts)
   if opts.color_overrides ~= nil then
     M.configure_colors(opts.color_overrides or {})
   end
-  M.configure_highlights(opts.highlight_overrides or {})
+  M.configure_highlights(opts.highlight_overrides or {}, opts.transparent)
 
   for group, hls in pairs(M.highlights) do
     highlight(group, hls)

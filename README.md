@@ -65,6 +65,14 @@ open an issue if there are any others you'd like to see support for.
 
 ## ⚙️ Configuration
 
+A transparent background can be enabled with:
+
+```lua
+require('palenightfall').setup({
+  transparent = true,
+})
+```
+
 Any colors and highlights can be overridden in Lua with the `setup` function:
 
 ```lua
