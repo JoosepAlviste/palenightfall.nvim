@@ -89,7 +89,7 @@ function M.configure_highlights(overrides, transparent)
     SignColumn        = { bg = 'NONE' },
     FoldColumn        = { fg = c.line_numbers, bg = 'NONE' },
     Folded            = { fg = c.comments, bg = c.background_darker },
-    VertSplit         = { fg = c.highlight, bg = c.background },
+    VertSplit         = { fg = c.statusline, bg = c.background },
     Statusline        = { fg = c.foreground, bg = c.statusline },
     StatuslineNC      = { fg = c.foreground_darker, bg = c.statusline },
     TabLine           = { fg = c.foreground, bg = c.statusline },
