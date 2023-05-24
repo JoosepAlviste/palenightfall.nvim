@@ -72,6 +72,10 @@ M.highlights = nil
 function M.configure_highlights(overrides, transparent)
   local c = M.colors
 
+  if transparent then
+    c.background = "none"
+  end
+
   ---@type PalenightfallHighlightConfig
   local default_highlights = {
     -- UI elements
@@ -111,7 +115,7 @@ function M.configure_highlights(overrides, transparent)
     Conceal           = { fg = c.brown },
 
     -- Syntax
-    Normal      = { fg = c.foreground, bg = transparent and 'NONE' or c.background },
+    Normal      = { fg = c.foreground, bg = c.background },
     Identifier  = { fg = c.foreground },
     Comment     = { fg = c.comments, italic = true },
     NonText     = { fg = c.comments },
